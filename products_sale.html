@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<title>title</title>
+		<!-- CSS -->
+			<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" media="screen" >
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+			<link href="js/range/normalize.css" rel="stylesheet" media="screen">
+			<link href="css/style.css" rel="stylesheet" media="screen">
+		<!-- END OF CSS -->
+		<!--SCRIPT -->
+			<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/jquery.placeholder.js"></script>
+			<script src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+			<link href="js/selectric/selectric.css" rel="stylesheet" media="screen">
+			<script src="js/selectric/jquery.selectric.js"></script>
+			<link href="js/rate/jquery.raty.css" rel="stylesheet" media="screen">
+			<script src="js/rate/jquery.raty.js"></script>
+			<link href="js/range/ion.rangeSlider.css" rel="stylesheet" media="screen">
+			<link href="js/range/ion.rangeSlider.skinHTML5.css" rel="stylesheet" media="screen">
+			<script src="js/range/ion.rangeSlider.min.js"></script>
+			<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" media="screen">
+			<script src="js/bxslider/jquery.bxslider.js"></script>
+			<script src="js/common.js"></script>
+			<!--[if IE]>  
+				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+			<![endif]--> 
+		<!-- END OF SCRIPT -->
+	</head>
+<body class="body_sale">
+	<div class="wrapper">
+		<div class="top_menu">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Блог/Статьи</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="feedback">
+					<a href="#modal_feedback" class="fancybox"><img src="img/feedback.png" alt="">Написать нам</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header">
+			<div class="inner">
+				<div class="logo">
+					<a href="/" title>
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="search">
+					<form>
+						<button type="submit"></button>
+						<input type="text" placeholder="Введите название оборудования">
+						<button type="reset"></button>
+					</form>
+				</div>
+				<div class="phone">
+					<p>+7  (861)  219-59-19</p>
+					<p>+7  (800)  219-59-19</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="inner">
+				<div class="head">
+					<nav class="nav_horizontal">
+						<ul>
+							<li class="nav_rent"><a href="index.html">Аренда техники</a></li>
+							<li class="nav_sale active"><a href="index2.html">Продажа техники</a></li>
+							<li class="nav_serv"><a href="index3.html">Сервис</a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+				</div>
+				<div class="content">
+					<div class="sidebar">
+						<div class="catalog_list">
+							<form>
+								<select>
+									<option>Весь каталог аренды</option>
+									<option>Тепловые пушки</option>
+									<option>Тепловые завесы</option>
+									<option>Обогреватели</option>
+									<option>Вентиляторы</option>
+									<option>Конвекторы электрические</option>
+									<option>Тепловые пушки</option>
+									<option>Тепловые завесы</option>
+									<option>Обогреватели</option>
+									<option>Конвекторы электрические</option>
+									<option>Тепловые пушки</option>
+								</select>
+							</form>
+						</div>
+						<div class="catalog_menu">
+							<div class="nav_head"></div>
+							<ul>
+								<li class="submenu">
+									<a href="#">Тепловые пушки</a>
+									<ul>
+										<li><a href="#">Дизельные</a></li>
+										<li><a href="#">Газовые</a></li>
+										<li><a href="#">Электрические</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Тепловые завесы</a></li>
+								<li><a href="#">Обогреватели</a></li>
+								<li class="submenu">
+									<a href="#">Вентиляторы и тепловентиляторы</a>
+									<ul>
+										<li><a href="#">Дизельные</a></li>
+										<li><a href="#">Газовые</a></li>
+										<li><a href="#">Электрические</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Увлажнители и осушители воздуха</a></li>
+								<li><a href="#">Конвекторы электрические</a></li>
+							</ul>
+						</div>
+						<div class="sidebar_filter">
+							<form>
+								<div class="filter_brand">
+									<div class="sidebar_title">Бренды</div>
+									<button type="reset">Сбросить фильтр</button>
+									<div class="filter_body">
+										<div class="form_group">
+											<input type="checkbox" id="brand1">
+											<label for="brand1">ASUS</label>
+										</div>
+										<div class="form_group">
+											<input type="checkbox" id="brand2">
+											<label for="brand2">GigaByte</label>
+										</div>
+										<div class="form_group">
+											<input type="checkbox" id="brand3">
+											<label for="brand3">MSI</label>
+										</div>
+										<div class="form_group">
+											<input type="checkbox" id="brand4">
+											<label for="brand4">ASRock</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter_price">
+									<div class="sidebar_title">Цена</div>
+									<div class="filter_body">
+										<div class="range_result">
+											<span id="result_from">0</span>
+											-
+											<span id="result_to">0</span>
+											руб.
+										</div>
+										<input type="text" id="range" value="" data-min="500" data-max="10000"/>
+									</div>
+								</div>
+								<div class="filter_special">
+									<div class="sidebar_title">Специальные предложения</div>
+									<div class="filter_body">
+										<div class="form_group">
+											<input type="checkbox" id="spec1">
+											<label for="spec1">Акция<span class="count">(12)</span></label>
+										</div>
+										<div class="form_group">
+											<input type="checkbox" id="spec2">
+											<label for="spec2">Выгодная покупка<span class="count">(2)</span></label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="filter_use">
+							<form>
+								<div class="sidebar_title">Использование</div>
+								<div class="filter_body">
+									<div class="form_group">
+										<input type="radio" id="use1" name="radio_use" checked>
+										<label for="use1">Вся техника</label>
+									</div>
+									<div class="form_group">
+										<input type="radio" id="use2" name="radio_use">
+										<label for="use2">Только новая</label>
+									</div>
+									<div class="form_group">
+										<input type="radio" id="use3" name="radio_use">
+										<label for="use3">Только б/у</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="content_inner">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Аренда техники</a></li>
+								<li><a href="#">Климатическое оборудование</a></li>
+							</ul>
+						</div>
+						<div class="title">
+							<h2>Климатическое оборудование</h2>
+							<div class="filter_view">
+								<form>
+									<span>Вид каталога</span>
+									<a href="#" class="view_tile active"><img src="img/view_tile.png" alt=""></a>
+									<a href="#" class="view_list"><img src="img/view_list.png" alt=""></a>
+								</form>
+							</div>
+						</div>
+						<div class="filter_sorting">
+							<div class="filter_sort">
+								<form>
+									<span>Фильтровать по:</span>
+									<select>
+										<option>Цена по возрастанию</option>
+										<option>Цене по убыванию</option>
+										<option>Названию А-Я</option>
+										<option>Названию Я-А</option>
+										<option>Новизне</option>
+										<option>Популярности</option>
+									</select>
+								</form>
+							</div>
+							<div class="filter_count">Показывать по: <a href="#">10</a>, <a href="#" class="active">30</a>, <a href="#">50</a>, <a href="#">все</a></div>
+							<div class="clear"></div>
+						</div>
+						<div class="products">
+							<div class="product_box">
+								<div class="product_head">
+									<div class="product_img">
+										<a href="#">
+											<img src="img/product_img.jpg" alt="">
+										</a>
+									</div>
+									<div class="product_article">Артикул: <b>45812384</b></div>
+									<div class="product_rate">
+										<span class="rate" data-score="3"></span>
+									</div>
+								</div>
+								<div class="product_body">
+									<div class="product_title">
+										<a href="#">Наименование элемента</a>
+									</div>
+									<div class="product_feature">
+										<p>Тип хвостовика: <b>sds-plus</b></p>
+										<p>Количество режимов: <b>2</b></p>
+										<p>Сила удара: <b>0.9 Дж</b></p>
+										<p>Тип аккумулятора: <b>Li-lon</b></p>
+										<p>Напряжение аккумулятора: <b>12 В</b></p>
+										<p>Емкость аккумулятора: <b>3 А*ч</b></p>
+										<p>Наличие быстросменного патрона: <b>нет</b></p>
+										<p>Max диаметр сверления коронкой (бетон): <b>13 мм</b></p>
+										<p>Мах диаметр сверления (дерево): <b>20 мм</b></p>
+										<p>Max диаметр сверления (металл): <b>13 мм</b></p>
+										<p>Вес: <b>1.7 кг</b></p>
+									</div>
+								</div>
+								<div class="product_footer">
+									<div class="product_price">
+										<p>Продажа:</p>
+										<div class="price">
+											<p>4 750 руб</p>
+										</div>
+										<div class="add_compare">
+											<input type="checkbox" id="compare1">
+											<label for="compare1">Сравнить</label>
+										</div>
+									</div>
+									<div class="product_link">
+										<a href="#" class="add_request">Добавить в заявку</a>
+										<a href="#modal_request" class="one_click fancybox">Заявка в 1 клик</a>
+									</div>
+								</div>
+							</div>
+							<div class="product_box">
+								<div class="product_head">
+									<div class="product_img">
+										<a href="#">
+											<img src="img/product_img.jpg" alt="">
+										</a>
+									</div>
+									<div class="product_article">Артикул: <b>45812384</b></div>
+									<div class="product_rate">
+										<span class="rate" data-score="3"></span>
+									</div>
+								</div>
+								<div class="product_body">
+									<div class="product_title">
+										<a href="#">Наименование элемента</a>
+									</div>
+									<div class="product_feature">
+										<p>Тип хвостовика: <b>sds-plus</b></p>
+										<p>Количество режимов: <b>2</b></p>
+										<p>Сила удара: <b>0.9 Дж</b></p>
+										<p>Тип аккумулятора: <b>Li-lon</b></p>
+										<p>Напряжение аккумулятора: <b>12 В</b></p>
+										<p>Емкость аккумулятора: <b>3 А*ч</b></p>
+										<p>Наличие быстросменного патрона: <b>нет</b></p>
+										<p>Max диаметр сверления коронкой (бетон): <b>13 мм</b></p>
+										<p>Мах диаметр сверления (дерево): <b>20 мм</b></p>
+										<p>Max диаметр сверления (металл): <b>13 мм</b></p>
+										<p>Вес: <b>1.7 кг</b></p>
+									</div>
+								</div>
+								<div class="product_footer">
+									<div class="product_price">
+										<p>Продажа:</p>
+										<div class="price">
+											<p>4 750 руб</p>
+										</div>
+										<div class="add_compare">
+											<input type="checkbox" id="compare2">
+											<label for="compare2">Сравнить</label>
+										</div>
+									</div>
+									<div class="product_link">
+										<a href="#" class="add_request">Добавить в заявку</a>
+										<a href="#modal_request" class="one_click fancybox">Заявка в 1 клик</a>
+									</div>
+								</div>
+							</div>
+							<div class="product_box">
+								<div class="product_head">
+									<div class="product_img">
+										<a href="#">
+											<img src="img/product_img.jpg" alt="">
+										</a>
+									</div>
+									<div class="product_article">Артикул: <b>45812384</b></div>
+									<div class="product_rate">
+										<span class="rate" data-score="3"></span>
+									</div>
+								</div>
+								<div class="product_body">
+									<div class="product_title">
+										<a href="#">Наименование элемента</a>
+									</div>
+									<div class="product_feature">
+										<p>Тип хвостовика: <b>sds-plus</b></p>
+										<p>Количество режимов: <b>2</b></p>
+										<p>Сила удара: <b>0.9 Дж</b></p>
+										<p>Тип аккумулятора: <b>Li-lon</b></p>
+										<p>Напряжение аккумулятора: <b>12 В</b></p>
+										<p>Емкость аккумулятора: <b>3 А*ч</b></p>
+										<p>Наличие быстросменного патрона: <b>нет</b></p>
+										<p>Max диаметр сверления коронкой (бетон): <b>13 мм</b></p>
+										<p>Мах диаметр сверления (дерево): <b>20 мм</b></p>
+										<p>Max диаметр сверления (металл): <b>13 мм</b></p>
+										<p>Вес: <b>1.7 кг</b></p>
+									</div>
+								</div>
+								<div class="product_footer">
+									<div class="product_price">
+										<p>Продажа:</p>
+										<div class="price">
+											<p>4 750 руб</p>
+										</div>
+										<div class="add_compare">
+											<input type="checkbox" id="compare3">
+											<label for="compare3">Сравнить</label>
+										</div>
+									</div>
+									<div class="product_link">
+										<a href="#" class="add_request">Добавить в заявку</a>
+										<a href="#modal_request" class="one_click fancybox">Заявка в 1 клик</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="block_help">
+						<h4>Как арендовать климатическое оборудование</h4>
+						<p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение существенных финансовых и административных условий. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+						<p>Равным образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
+					</div>
+					<div class="manufacturers">
+						<h4>Производители:</h4>
+						<table>
+							<tr>
+								<td>
+									<img src="img/manuf_img1.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img2.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img3.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img4.png" alt="">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/manuf_img5.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img6.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img7.png" alt="">
+								</td>
+								<td>
+									<img src="img/manuf_img8.png" alt="">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_top">
+			<div class="inner">
+				<div class="logo">
+					<a href="/" title>
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Блог/Статьи</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Сервис</a></li>
+					<li><a href="#">Продажа</a></li>
+					<li ><a href="#">Аренда</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_middle">
+			<div class="inner">
+				<div class="copyright">© Профессионал 2015</div>
+				<div class="develop">Разработка сайта РА "БизнесПрофи"</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="inner">
+				<div class="compare">
+					<a href="#">Сравнить</a>
+				</div>
+				<div class="basket">
+					<a href="#">Корзина</a>
+				</div>
+				<div class="basket_count">0</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal_feedback">
+		<form>
+			<div class="form_title">Написать нам</div>
+			<div class="form_body">
+				<div class="input_group">
+					<input type="text" placeholder="Ваше имя" required>
+					<span class="required"></span>
+				</div>
+				<div class="input_group">
+					<input type="text" placeholder="Телефон" required>
+					<span class="required"></span>
+				</div>
+				<textarea placeholder="Что Вас интересует?"></textarea>
+				<button>Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div id="modal_success">
+		<div class="form_title"></div>
+		<div class="form_body">
+			<p>Спасибо!</p>
+			<p>Ваше сообщение принято.</p>
+			<p>Мы ответим  на него в максимально короткие сроки</p>
+		</div>
+	</div>
+	<div id="modal_request">
+		<form>
+			<div class="form_title">заявка в 1 клик</div>
+			<div class="form_body">
+				<div class="input_group">
+					<input type="text" placeholder="Ваше имя" required>
+					<span class="required"></span>
+				</div>
+				<div class="input_group">
+					<input type="text" placeholder="Телефон" required>
+					<span class="required"></span>
+				</div>
+				<div class="input_group">
+					<input type="text" placeholder="Желаемое количество" required>
+					<span class="required"></span>
+				</div>
+				<textarea placeholder="Комментарий"></textarea>
+				<button>Отправить</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
