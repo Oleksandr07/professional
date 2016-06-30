@@ -252,6 +252,22 @@ $(function(){
 		flipBox();
 	});
 	flipBox();
+
+	//--------------------------------------------------  sidebar_menu_arr
+	$('.sidebar_menu_arr').click(function(event) {
+		var submenu = $(this).parents('li').find('ul');
+		if (submenu.css('display') == 'none') {
+			submenu.slideDown(400);
+		} 
+		else {
+			submenu.slideUp(400);
+		}
+	});
+	$(window).resize(function(event) {
+		if ($(window).width() > 1023) {
+			$('.body_rent .sidebar .menu_category ul ul').css('display', '');
+		}
+	});
 	
 	
 

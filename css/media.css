@@ -1,3 +1,12 @@
+@media only screen and (min-width:1024px){
+	.sidebar .menu_category>ul>li>ul{
+		display: none;
+		z-index: -1;
+	}
+	.sidebar .menu_category>ul>li:hover>ul{
+		display: block;
+	}
+}
 @media only screen and (max-width:1023px) {
 	.inner{
 		width: 758px;
@@ -139,6 +148,44 @@
 		width: auto;
 		margin-left: 0;
 	}
+	.sidebar_menu_arr{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 20px;
+		height: 30px;
+		cursor: pointer;
+		z-index: 5;
+	}
+		.sidebar_menu_arr:before{
+			content: '';
+			position: absolute;
+			top: 13px;
+    		left: 4px;
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-top-color: #78bcd9;
+		}
+		.body_rent .sidebar_menu_arr:before{
+			border-top-color: #ec373f;
+		}
+		.body_sale .sidebar_menu_arr:before{
+			border-top-color: #3888e9;
+		}
+		.body_serv .sidebar_menu_arr:before{
+			border-top-color: #ff9501;
+		}
+	.sidebar .menu_category>ul>li>a{
+		padding-right: 20px;
+	}
+	.sidebar .menu_category>ul>li>ul{
+		position: relative;
+		display: none;
+		top: auto;
+		left: auto;
+		width: auto;
+	}
 }
 
 @media only screen and (max-width:767px) {
@@ -163,6 +210,7 @@
 	}
 	.top_menu_header{
 		display: block;
+		padding: 20px 5px;
 	}
 	.top_menu nav{
 		float: none;
@@ -192,7 +240,7 @@
 	.header .navbar{
 		display: block;
 		position: absolute;
-		left: 5px;
+		right: 10px;
 		top: 0;
 	}
 	.header{
@@ -391,10 +439,13 @@
 	.product_video iframe{
 		height: 360px;
 	}
+	.sidebar_menu_arr{
+
+	}
 }
 @media only screen and (max-width:479px){
 	.header .logo{
-		text-align: right;
+		text-align: left;
 	}
 	.phone{
 		margin-right: 0;
