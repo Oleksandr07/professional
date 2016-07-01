@@ -130,12 +130,6 @@
 		width: 230px;
 		margin-bottom: 15px;
 	}
-	.product_link{
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 145px;
-	}
 	.product_video iframe{
 		max-width: 100%;
 		height: 420px;
@@ -186,6 +180,71 @@
 		left: auto;
 		width: auto;
 	}
+	.news_content{
+		width: 450px;
+	}
+	.contact_left{
+		width: 300px;
+	}
+	.contact_right{
+		width: 455px;
+	}
+	.contacts_other_left, .contacts_other_right{
+		width: 370px;
+	}
+	.title h2{
+		float: none;
+		margin-bottom: 10px;
+	}
+	.action_filter{
+		float: none;
+	}
+	.filter_count{
+		float: left;
+	}
+	.filter_view{
+		position: relative;
+		right: auto;
+		bottom: auto;
+	}
+	.product_head{
+		margin-bottom: 15px;
+	}
+	.product_body{
+		width: 355px;
+		padding-left: 0;
+	}
+	.product_footer{
+		position: absolute;
+		top: 0;
+		right: 0;
+		float: none;
+	}
+	.products_list .product_box{
+		width: 240px;
+		margin-left: 20px;
+	}
+	.products_list .product_box:nth-child(3n+1){
+		margin-left: 20px;
+	}
+	.products_list .product_box:nth-child(2n+1){
+		margin-left: 0;
+	}
+	.products_list .product_img{
+		width: auto;
+		height: 160px;
+	}
+	.products_list .product_img img{
+		width: 100%;
+	}
+	.products_list .product_footer{
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+	.compare_content{
+		width: 490px;
+	}
 }
 
 @media only screen and (max-width:767px) {
@@ -194,7 +253,9 @@
 		padding: 0 5px;
 	}
 	h2{
+		line-height: 30px;
 		text-align: center;
+		margin-bottom: 10px;
 	}
 	.top_menu{
 		position: fixed;
@@ -455,6 +516,72 @@
 			display: block;
 			margin-bottom: 20px;
 		}
+	.title h2{
+		float: none;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.action_filter{
+		float: none;
+		text-align: center;
+	}
+	.action_check, .filter_count, .filter_sort{
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.news_title{
+		margin-bottom: 20px;
+	}
+	.news_img{
+		float: none;
+		margin: 0 auto 20px;
+	}
+	.news_content{
+		float: none;
+		width: auto;
+	}
+	.news_title{
+		font-size: 22px;
+	}
+	.contact_left, .contact_right, .contacts_other_left, .contacts_other_right{
+		float: none;
+		width: auto;
+	}
+	.contact_left, .contacts_other_left{
+		margin-bottom: 20px;
+	}
+	.sidebar, .filter_use{
+		margin-bottom: 0;
+	}
+	.product_head{
+		float: none;
+		width: auto;
+	}
+	.product_body{
+		float: none;
+		width: 70%;
+	}
+	.compare_table{
+		position: relative;
+		overflow-x: auto;
+	}
+	.compare_inner{
+		display: table;
+		width: 100%;
+		min-width: 740px;
+	}
+	.compare_sidebar{
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.compare_content{
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+		width: auto;
+	}
 }
 @media only screen and (max-width:479px){
 	.header .logo{
@@ -516,12 +643,100 @@
 		float: none;
 		width: auto;
 	}
-	.product_link{
+	.product_video iframe{
+		height: 250px;
+	}
+	.action_check{
+		margin-bottom: 5px;
+	}
+	.action_check, .filter_count{
+		display: block;
+		padding: 0;
+	}
+	.news_img{
+		width: auto;
+		height: auto;
+	}
+	.news_img img{
+		width: 100%;
+	}
+	.blog_categories a{
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+	.news_title{
+		font-size: 18px;
+	}
+	.product_img{
+		width: auto;
+		height: auto;
+	}
+	.product_img img{
+		width: 100%;
+	}
+	.product_body{
+		width: auto;
+		margin-bottom: 15px;
+	}
+	.product_article, .product_rate{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 10px;
+	}
+	.product_footer{
 		position: relative;
 		top: auto;
 		right: auto;
+		width: auto;
 	}
-	.product_video iframe{
-		height: 250px;
+	.product_price{
+		margin-bottom: 10px;
+	}
+	.add_compare{
+		float: none;
+		text-align: center;
+	}
+	.product_link{
+		width: 145px;
+		margin: 0 auto;
+	}
+	.form_group{
+		margin-bottom: 5px;
+	}
+	.manufacturers table tr td{
+		display: block;
+		width: auto;
+	}
+	.products_list .product_box{
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+	.products_list .product_box:nth-child(3n+1){
+		margin-left: 0;
+	}
+	.products_list .product_box:nth-child(2n+1){
+		margin-left: 0;
+	}
+	.products_list .product_img{
+		height: auto;
+	}
+	.products_list .product_price{
+		text-align: center;
+	}
+	.products_list .product_article{
+		display: block;
+		text-align: center;
+	}
+	.products_list .add_compare{
+		margin-top: 10px;
+	}
+	.products_list .product_rate{
+		float: none;
+		margin-top: 10px;
+		margin-right: 0;
+	}
+	.product_link{
+		width: 220px;
 	}
 }
