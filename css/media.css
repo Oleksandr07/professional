@@ -193,6 +193,9 @@
 		width: auto;
 		padding: 0 5px;
 	}
+	h2{
+		text-align: center;
+	}
 	.top_menu{
 		position: fixed;
 		left: -100%;
@@ -439,9 +442,19 @@
 	.product_video iframe{
 		height: 360px;
 	}
-	.sidebar_menu_arr{
-
+	.info_services{
+		display: none;
 	}
+	.mobile{
+		display: block;
+	} 
+		.mobile h2{
+			margin-bottom: 20px;
+		}
+		.mobile .info_services{
+			display: block;
+			margin-bottom: 20px;
+		}
 }
 @media only screen and (max-width:479px){
 	.header .logo{

@@ -646,6 +646,9 @@ button:hover{
 							border-top: 4px solid transparent;
 							border-bottom: 4px solid transparent;
 						}
+.mobile{
+	display: none;
+}
 /*--------------------content_inner---------------*/
 .content_inner{
 	position: relative;
