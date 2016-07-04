@@ -53,7 +53,6 @@ h4{color: #000;font-size: 20px;font-weight: 700;margin-bottom: 15px;}
 	position: relative;
 	background: #f7fbfc;
 	min-height: 100%;
-	min-width: 1000px;
 }
 button{
 	position: relative;
@@ -75,7 +74,83 @@ button:hover{
 	position: relative;
 	background: #fff;
 	border-bottom: 1px solid #78bcd9;
+	z-index: 100;
 }
+	.top_menu_header{
+		display: none;
+		padding: 30px 5px;
+		overflow: hidden;
+	}
+		.navbar{
+			position: relative;
+			float: right;
+			width: 36px;
+			height: 27px;
+			cursor: pointer;
+			z-index: 10;
+		}
+			.navbar:before{
+				content: 'Меню';
+				position: absolute;
+				left: -5px;
+				bottom: -18px;
+				width: 100%;
+				font-size: 14px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			.navbar span{
+				position: absolute;
+				background: #5b6468;
+				width: 100%;
+				height: 5px;
+				left: 0;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+				.navbar:hover span{
+					background: #78bcd9;
+				}
+				.body_rent .navbar:hover span{
+					background: #ec373f;
+				}
+				.body_sale .navbar:hover span{
+					background: #3888e9;
+				}
+				.body_serv .navbar:hover span{
+					background: #ff9501;
+				}
+				.navbar span:nth-child(1){
+					top: 0;
+				}
+				.navbar span:nth-child(2){
+					top: 11px;
+				}
+				.navbar span:nth-child(3){
+					top: 11px;
+				}
+				.navbar span:nth-child(4){
+					top: 22px;
+				}
+				.navbar.active span:nth-child(1), .navbar.active span:nth-child(4){
+					opacity: 0;
+				}
+				.navbar.active span:nth-child(2){
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+				.navbar.active span:nth-child(3){
+					-webkit-transform: rotate(-45deg);
+					-moz-transform: rotate(-45deg);
+					-o-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
 	.top_menu nav{
 		position: relative;
 		float: left;
@@ -108,6 +183,7 @@ button:hover{
 		position: relative;
 		float: right;
 		width: 150px;
+		text-align: right;
 	}
 		.feedback a{
 			color: #78bcd9;
@@ -124,10 +200,16 @@ button:hover{
 	position: relative;
 	padding: 50px 0;
 }
+	.header .navbar{
+		display: none;
+	}
 	.logo{
 		position: relative;
 		float: left;
 		width: 240px;
+	}
+	.header .feedback{
+		display: none;
 	}
 	.search{
 		position: relative;
@@ -187,6 +269,7 @@ button:hover{
 		width: 190px;
 		font-size: 20px;
 		line-height: 24px;
+		text-align: right;
 		margin-top: -5px;
 	}
 /*--------------------main---------------*/
@@ -481,6 +564,9 @@ button:hover{
 			height: 10px;
 			border-left: 8px solid #4c8eaa;
 		}
+		.sidebar_head_mobile{
+			display: none;
+		}
 	.sidebar .menu_category>ul>li{
 		position: relative;
 		background: #fff;
@@ -513,7 +599,7 @@ button:hover{
 				}
 			.sidebar .menu_category>ul>li>ul{
 				position: absolute;
-				display: none;
+				/*display: none;*/
 				background: #fff;
 				left: 100%;
 				top: -1px;
@@ -521,13 +607,13 @@ button:hover{
 				border: 1px solid #78bcd9;
 				margin-left: -1px;
 				padding: 10px 0 5px;
-				z-index: -1;
+				/*z-index: -1;*/
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				box-sizing: border-box;
 			}
 				.sidebar .menu_category>ul>li:hover>ul{
-					display: block;
+					/*display: block;*/
 				}
 				.sidebar .menu_category>ul>li>ul>li{
 					position: relative;
@@ -560,6 +646,9 @@ button:hover{
 							border-top: 4px solid transparent;
 							border-bottom: 4px solid transparent;
 						}
+.mobile{
+	display: none;
+}
 /*--------------------content_inner---------------*/
 .content_inner{
 	position: relative;
@@ -789,6 +878,9 @@ button:hover{
 								border-top: 4px solid transparent;
 								border-bottom: 4px solid transparent;
 							}
+			.slide_up .flip_box img{
+				width: 100%;
+			}
 /*--------------------pagers---------------*/
 .pagers{
 	position: relative;
@@ -1252,9 +1344,9 @@ button:hover{
 			content: '>';
 			position: absolute;
 			top: 10px;
-			left: -10px;
+			right: -10px;
 		}
-			.breadcrumbs ul li:first-child:before{
+			.breadcrumbs ul li:last-child:before{
 				content: none;
 			}
 		.breadcrumbs ul li a{
@@ -1632,7 +1724,7 @@ label .count{
 			}
 		.product_footer{
 			position: relative;
-			float: left;
+			float: right;
 			width: 145px;
 		}
 			.product_price{
@@ -1765,6 +1857,9 @@ label .count{
 			text-align: center;
 			padding: 15px;
 		}
+			.manufacturers table tr td img{
+				max-width: 100%;
+			}
 /*--------------------products_inner---------------*/
 .products_inner{
 	position: relative;
@@ -1804,6 +1899,7 @@ label .count{
 					}
 			.product_photo_small{
 				position: relative;
+				overflow: hidden;
 			}
 				.product_photo_small a{
 					position: relative;
@@ -2213,7 +2309,6 @@ label .count{
 	position: relative;
 	background: #ebeff2;
 	height: 245px;
-	min-width: 1000px;
 	margin-top: -245px;
 }
 	.footer_top{
@@ -2225,9 +2320,11 @@ label .count{
 			position: relative;
 			float: right;
 			width: 700px;
+			text-align: right;
 		}
 			.footer ul li{
-				float: right;
+				display: inline-block;
+				vertical-align: top;
 				padding-top: 10px;
 				margin-left: 15px;
 			}

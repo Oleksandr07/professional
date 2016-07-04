@@ -11,6 +11,7 @@
 			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 			<link href="js/range/normalize.css" rel="stylesheet" media="screen">
 			<link href="css/style.css" rel="stylesheet" media="screen">
+			<link href="css/media.css" rel="stylesheet" media="screen">
 		<!-- END OF CSS -->
 		<!--SCRIPT -->
 			<script src="js/jquery-1.11.1.min.js"></script>
@@ -35,6 +36,19 @@
 	<div class="wrapper">
 		<div class="top_menu">
 			<div class="inner">
+				<div class="top_menu_header">
+					<div class="logo">
+						<a href="/" title>
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="navbar">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
 				<nav>
 					<ul>
 						<li class="active"><a href="#">Оплата и доставка</a></li>
@@ -52,10 +66,23 @@
 		</div>
 		<div class="header">
 			<div class="inner">
+				<div class="navbar">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<div class="logo">
 					<a href="/" title>
 						<img src="img/logo.png" alt="">
 					</a>
+				</div>
+				<div class="feedback">
+					<a href="#modal_feedback" class="fancybox"><img src="img/feedback.png" alt="">Написать нам</a>
+				</div>
+				<div class="phone">
+					<p>+7  (861)  219-59-19</p>
+					<p>+7  (800)  219-59-19</p>
 				</div>
 				<div class="search">
 					<form>
@@ -63,10 +90,6 @@
 						<input type="text" placeholder="Введите название оборудования">
 						<button type="reset"></button>
 					</form>
-				</div>
-				<div class="phone">
-					<p>+7  (861)  219-59-19</p>
-					<p>+7  (800)  219-59-19</p>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -90,143 +113,147 @@
 							<li><a href="#">Сравнение</a></li>
 						</ul>
 					</div>
-					<div class="compare_inner">
+					<div class="title">
 						<h2>Список сравнения</h2>
-						<div class="compare_sidebar">
-							<div class="add_product">
-								<a href="#">Добавить еще один товар </a>
+					</div>
+					<div class="compare_table">
+						<div class="compare_inner">
+							<div class="compare_sidebar">
+								<div class="add_product">
+									<a href="#">Добавить еще один товар </a>
+								</div>
+								<div class="compare_tabs">
+									<ul>
+										<li class="active">Все параметры</li>
+										<li>Только отличия</li>
+									</ul>
+								</div>
+								<div class="compare_list_title">
+									<ul>
+										<li>Тип хвостовика</li>
+										<li>Количество режимов</li>
+										<li>Сила удара</li>
+										<li>Тип аккумулятора</li>
+										<li>Напряжение аккумулятора</li>
+										<li>Емкость аккумулятора</li>
+										<li>Наличие быстросменного патрона</li>
+										<li>Max диаметр сверления коронкой (бетон)</li>
+										<li>Мах диаметр сверления (дерево)</li>
+										<li>Max диаметр сверления (металл)</li>
+										<li>Вес</li>
+									</ul>
+								</div>
 							</div>
-							<div class="compare_tabs">
-								<ul>
-									<li class="active">Все параметры</li>
-									<li>Только отличия</li>
+							<div class="compare_content">
+								<ul class="compare_slider">
+									<li class="compare_item">
+										<div class="compare_img">
+											<a href="#">
+												<img src="img/product_img.jpg" />
+											</a>
+										</div>
+										<div class="compare_title">
+											<a href="#">Наименование элемента</a>
+										</div>
+										<div class="compare_list">
+											<ul>
+												<li>sds-plus</li>
+												<li>2</li>
+												<li>0.9 Дж</li>
+												<li>Li-lon</li>
+												<li>12 В</li>
+												<li>3 А*ч</li>
+												<li>нет</li>
+												<li>13 мм</li>
+												<li>20 мм</li>
+												<li>13 мм</li>
+												<li>1.7 кг</li>
+											</ul>
+										</div>
+										<div class="compare_del"></div>
+									</li>
+									<li class="compare_item">
+										<div class="compare_img">
+											<a href="#">
+												<img src="img/product_img.jpg" />
+											</a>
+										</div>
+										<div class="compare_title">
+											<a href="#">Наименование элемента</a>
+										</div>
+										<div class="compare_list">
+											<ul>
+												<li>sds-plus</li>
+												<li>2</li>
+												<li>0.9 Дж</li>
+												<li>Li-lon</li>
+												<li>12 В</li>
+												<li>3 А*ч</li>
+												<li>нет</li>
+												<li>13 мм</li>
+												<li>20 мм</li>
+												<li>13 мм</li>
+												<li>1.7 кг</li>
+											</ul>
+										</div>
+										<div class="compare_del"></div>
+									</li>
+									<li class="compare_item">
+										<div class="compare_img">
+											<a href="#">
+												<img src="img/product_img.jpg" />
+											</a>
+										</div>
+										<div class="compare_title">
+											<a href="#">Наименование элемента</a>
+										</div>
+										<div class="compare_list">
+											<ul>
+												<li>sds-plus</li>
+												<li>2</li>
+												<li>0.9 Дж</li>
+												<li>Li-lon</li>
+												<li>12 В</li>
+												<li>3 А*ч</li>
+												<li>нет</li>
+												<li>13 мм</li>
+												<li>20 мм</li>
+												<li>13 мм</li>
+												<li>1.7 кг</li>
+											</ul>
+										</div>
+										<div class="compare_del"></div>
+									</li>
+									<li class="compare_item">
+										<div class="compare_img">
+											<a href="#">
+												<img src="img/product_img.jpg" />
+											</a>
+										</div>
+										<div class="compare_title">
+											<a href="#">Наименование элемента</a>
+										</div>
+										<div class="compare_list">
+											<ul>
+												<li>sds-plus</li>
+												<li>2</li>
+												<li>0.9 Дж</li>
+												<li>Li-lon</li>
+												<li>12 В</li>
+												<li>3 А*ч</li>
+												<li>нет</li>
+												<li>13 мм</li>
+												<li>20 мм</li>
+												<li>13 мм</li>
+												<li>1.7 кг</li>
+											</ul>
+										</div>
+										<div class="compare_del"></div>
+									</li>
 								</ul>
 							</div>
-							<div class="compare_list_title">
-								<ul>
-									<li>Тип хвостовика</li>
-									<li>Количество режимов</li>
-									<li>Сила удара</li>
-									<li>Тип аккумулятора</li>
-									<li>Напряжение аккумулятора</li>
-									<li>Емкость аккумулятора</li>
-									<li>Наличие быстросменного патрона</li>
-									<li>Max диаметр сверления коронкой (бетон)</li>
-									<li>Мах диаметр сверления (дерево)</li>
-									<li>Max диаметр сверления (металл)</li>
-									<li>Вес</li>
-								</ul>
-							</div>
+							<div class="clear"></div>
 						</div>
-						<div class="compare_content">
-							<ul class="compare_slider">
-								<li class="compare_item">
-									<div class="compare_img">
-										<a href="#">
-											<img src="img/product_img.jpg" />
-										</a>
-									</div>
-									<div class="compare_title">
-										<a href="#">Наименование элемента</a>
-									</div>
-									<div class="compare_list">
-										<ul>
-											<li>sds-plus</li>
-											<li>2</li>
-											<li>0.9 Дж</li>
-											<li>Li-lon</li>
-											<li>12 В</li>
-											<li>3 А*ч</li>
-											<li>нет</li>
-											<li>13 мм</li>
-											<li>20 мм</li>
-											<li>13 мм</li>
-											<li>1.7 кг</li>
-										</ul>
-									</div>
-									<div class="compare_del"></div>
-								</li>
-								<li class="compare_item">
-									<div class="compare_img">
-										<a href="#">
-											<img src="img/product_img.jpg" />
-										</a>
-									</div>
-									<div class="compare_title">
-										<a href="#">Наименование элемента</a>
-									</div>
-									<div class="compare_list">
-										<ul>
-											<li>sds-plus</li>
-											<li>2</li>
-											<li>0.9 Дж</li>
-											<li>Li-lon</li>
-											<li>12 В</li>
-											<li>3 А*ч</li>
-											<li>нет</li>
-											<li>13 мм</li>
-											<li>20 мм</li>
-											<li>13 мм</li>
-											<li>1.7 кг</li>
-										</ul>
-									</div>
-									<div class="compare_del"></div>
-								</li>
-								<li class="compare_item">
-									<div class="compare_img">
-										<a href="#">
-											<img src="img/product_img.jpg" />
-										</a>
-									</div>
-									<div class="compare_title">
-										<a href="#">Наименование элемента</a>
-									</div>
-									<div class="compare_list">
-										<ul>
-											<li>sds-plus</li>
-											<li>2</li>
-											<li>0.9 Дж</li>
-											<li>Li-lon</li>
-											<li>12 В</li>
-											<li>3 А*ч</li>
-											<li>нет</li>
-											<li>13 мм</li>
-											<li>20 мм</li>
-											<li>13 мм</li>
-											<li>1.7 кг</li>
-										</ul>
-									</div>
-									<div class="compare_del"></div>
-								</li>
-								<li class="compare_item">
-									<div class="compare_img">
-										<a href="#">
-											<img src="img/product_img.jpg" />
-										</a>
-									</div>
-									<div class="compare_title">
-										<a href="#">Наименование элемента</a>
-									</div>
-									<div class="compare_list">
-										<ul>
-											<li>sds-plus</li>
-											<li>2</li>
-											<li>0.9 Дж</li>
-											<li>Li-lon</li>
-											<li>12 В</li>
-											<li>3 А*ч</li>
-											<li>нет</li>
-											<li>13 мм</li>
-											<li>20 мм</li>
-											<li>13 мм</li>
-											<li>1.7 кг</li>
-										</ul>
-									</div>
-									<div class="compare_del"></div>
-								</li>
-							</ul>
-						</div>
-						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
@@ -241,14 +268,14 @@
 					</a>
 				</div>
 				<ul>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">Оплата и доставка</a></li>
-					<li><a href="#">Блог/Статьи</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Сервис</a></li>
+					<li><a href="#">Аренда</a></li>
 					<li><a href="#">Продажа</a></li>
-					<li ><a href="#">Аренда</a></li>
+					<li><a href="#">Сервис</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Блог/Статьи</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 			</div>
 		</div>
