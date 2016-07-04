@@ -272,6 +272,9 @@ button:hover{
 		text-align: right;
 		margin-top: -5px;
 	}
+		.phone a{
+			color: #000;
+		}
 /*--------------------main---------------*/
 .main{
 	position: relative;
